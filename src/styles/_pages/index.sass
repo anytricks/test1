@@ -1,0 +1,159 @@
+body
+	
+	font-family: 'Roboto', sans-serif
+	.home-see
+		background-image: url(../img/home_background.jpg)
+		background-size: 100% 44.664005627rem
+		min-height: 44.664005627rem
+		.home-slider
+			
+			//style carousel
+			// display: flex
+			// justify-content: center
+			// align-items: center
+			.owl-carousel.owl-theme
+				min-height: 200px
+				// display: flex
+				position: relative
+				// justify-content: center
+				// align-items: center
+
+				.owl-item
+					min-height: 400px
+				.owl-dots
+					// +pos(abs, null null 0 50%)
+					position: absolute
+					// margin-bottom: 6.16800077707rem
+					left: 50%
+					+transform(translateX(-50%))
+					// bottom: 23px
+					margin-top: -10px
+					// .owl-dot.active
+					// 	span
+					// 		color: $vien
+				
+					.active 
+						span
+							background: $vien
+
+
+						
+				.item
+					position: absolute
+					margin-top: 2.5860003258rem
+					// display: flex
+					top: 48%
+					left: 50%
+					transform: translateX(-50%) translateY(-50%)
+					// display: flex
+					// 
+					text-align: center
+					align-items: center
+					img
+						width: 9.75000122835rem
+						height: auto
+						border-radius: 50%
+						// margin-left: 280px
+						border: 3px solid $vien
+						display: block
+						margin-left: auto
+						margin-right: auto
+						margin-bottom: 1.66800021014rem
+						// width: 50%
+						// position: absolute
+						// display: flex
+						// top: 150%
+						// left: 50%
+						// transform: translateX(-50%) translateY(-10%)
+
+				
+					
+
+					
+					h2
+						font-size: 1.5rem
+						color: $vien
+						// margin-top: 2.4rem
+						margin-bottom: 0.918000115654rem
+
+						// position: absolute
+						// top: 50%
+						// left: 50%
+						// transform: translateX(-50%) translateY(-5%)
+					.p1
+						+fz(1.33333434121rem)
+						margin-top: 1.66800021014rem
+						font-style: italic
+						color: #585858
+						height:  4.41000055559rem
+						line-height: 0,480000060472rem
+						
+						margin-bottom: 2.91600036737rem
+				
+				
+						// position: absolute
+						// top: 600%
+						// left: 50%
+						// transform: translateX(-50%) translateY(-0%)
+					p
+						+fz(1.16666754856rem)
+						margin-bottom: 1.58400019956rem
+						// margin-top: 0.5rem
+						// position: absolute
+						// top: 700%
+						// left: 50%
+						// transform: translateX(-50%) translateY(-0%)
+					
+						color: $blacks
+					+media-breakpoint-down(lg)
+						.p1
+							overflow: hidden
+						img
+							width: 12rem
+							height: auto
+
+			
+		//block home news
+		.home-news
+			.chuyennghiep
+				
+				&:after
+					content: ""
+					+pos(abs, null null -9px 50%)
+					width: 6.00000075591rem
+					height: 0.252000031748rem
+					background-color: $vien
+					transform: translateX(-50%) translateY(-50%)
+					z-index: 0
+
+				&:before
+					position: absolute
+					
+					content: ""
+					background-color: #fff
+					height: 1.41600017839rem
+					width: 1.41600017839rem
+					border: solid 0.252000031748rem $vien
+					border-radius: 50%
+					top: 90%
+					left: 50%
+					transform: translateX(-50%) translateY(50%)
+					z-index: 1
+					
+					
+				span
+					color: $timm
+					+fz(2.5rem)
+				h2
+					margin-top: 6.83400086098rem
+					+fz(2.50000188976rem)
+					display: inline-block
+					font-weight: bold
+					position: relative
+				
+		
+		
+				
+				
+		
+

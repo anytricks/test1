@@ -1,0 +1,30 @@
+footer
+	background: $xanh
+	color: $whites
+	+fz(1.16rem)
+	ul
+		list-style: none
+		li
+			display: inline-block
+			+pad(null null null null)
+			.tinh
+				color: $xanh
+				height: 2.5rem
+				text-decoration: none
+				width: 2.5rem
+				border-radius: 50%
+				background: darken($whites,30%)
+				display: flex
+				justify-content: center
+				align-items: center
+				transition: .3s all ease-in-out
+				+fz(1rem)
+				&:hover
+					background: $whites
+					+rotate(360deg)
+	+media-breakpoint-down(sm)
+		.tinh2
+			text-align: center
+		ul,p
+			text-align: center
+			+pad(0)

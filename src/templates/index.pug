@@ -1,0 +1,33 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	.home-see
+		section.home-news
+			.container
+				.row.text-center.mt-5
+					.col.chuyennghiep
+						h2 KHÁCH HÀNG NÓI
+		section.home-slider
+			.owl-carousel.owl-theme
+				- for(var x=1;x<4;x++)
+					.item
+						img(src="img/home_slider_1.png", alt="")
+						p.p1
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac condi-
+							br
+							| mentum mi, vitae iaculis ante. Suspendisse viverra urna quis diam sodales,
+							br
+							| convallis auctor nibh.						
+						h2 Pelican Steve
+						p.p2 CEO ABC Company
+					
+
+			
